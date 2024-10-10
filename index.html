@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta sallary="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="crud-title">Crud Project</h1>
+        <div class="form">
+            <div class="row">
+                <label for="name">Name</label>
+                <input type="text"  id="name">
+            </div>
+            <div class="row">
+                <label for="phone">phone</label>
+                <input type="tel"  id="phone">
+            </div>
+            <div class="row">
+                <label for="sallary">Sallary</label>
+                <input type="number"  id="sallary">
+            </div>
+            <button type="button" id="add" onclick="submitfun()">Add Member</button>
+            <button type="button" id="update">Update Member</button>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search..." id="searchInput"onkeyup="searchFun(this.value)">
+        </div>
+    </div>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Phone</td>
+                    <td>Sallary</td>
+                    <td>Update</td>
+                    <td>Delete</td>
+                </tr>
+            </thead>
+            <tbody id="demo">
+              <button></button>
+               
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#ffb03a, #ff8902);
+}
+.container .form {
+  padding: 50px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+.container .crud-title {
+  color: #fff;
+  text-shadow: 1px 1px 0 black;
+  margin-bottom: 15px;
+}
+.container .form .row {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin: 10px 0;
+}
+.container .form .row label {
+  font-size: 14px;
+  color: #257cdf;
+  margin-bottom: 2px;
+}
+.container .form .row input {
+  width: 350px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #257cdf;
+  border-radius: 4px;
+}
+.container .form button {
+  background-color: green;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+#add.hide{
+display: none;
+}
+#update.show{
+display: initial;
+}
+
+#update{
+display: none;
+}
+.container .form button:hover {
+  background-color: rgb(1, 110, 1);
+}
+.search{
+  margin-top: 70px;
+}
+.search input{
+  padding: 15px;
+  width: 380px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+ 
+}
+.search button{
+  padding: 15px 18px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: green;
+  color: #fff;
+  margin-left: 10px;
+}
+.table{
+  background: linear-gradient(#ff8902,#ffb03a);
+  width: 100%;
+  min-height: 100vh;
+  /* display: none; */
+}
+.table.hide{
+  display: none;
+}
+.table table{
+margin: 0 auto;
+background-color: rgb(255, 255, 255);
+border-radius: 4px;
+border-collapse: collapse;
+
+
+}
+
+table thead{
+  font-weight: 600;
+}
+table tr td{
+  padding: 7px 10px;
+  width: 150px;
+  text-align: center;
+  font-size: 18px;
+}
+table tbody tr:hover{
+  background-color: rgba(175, 175, 175, 0.918);
+}
+
+.btn{
+  padding: 7px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+.btn-update{
+  background-color: #fda624;
+}
+.btn-update:hover{
+  background-color: #ff8902;
+}
+.btn-delete{
+  background-color: #ff3b3b;
+}
+.btn-delete:hover{
+  background-color: #e91818;
+}
